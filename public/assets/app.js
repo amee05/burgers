@@ -1,9 +1,9 @@
-const burger = require("../../models/burger.js")
+console.log('hi')
 
 document.getElementById('addBurger').addEventListener('click', event => {
   event.preventDefault()
   axios.post('/api/burgers', {
-    name: document.getElementById(burger).value,
+    name: document.getElementById('name').value,
     devoured: false
   })
     .then(() => location.reload())
