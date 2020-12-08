@@ -1,8 +1,9 @@
+const burger = require("../../models/burger")
 
-document.getElementById('addUser').addEventListener('click', event => {
+document.getElementById('addBurger').addEventListener('click', event => {
   event.preventDefault()
-  axios.post('/api/users', {
-    name: document.getElementById('name').value,
+  axios.post('/api/burgers', {
+    name: document.getElementById(burger).value,
     isHere: false
   })
     .then(() => location.reload())
@@ -11,11 +12,11 @@ document.getElementById('addUser').addEventListener('click', event => {
 
 document.addEventListener('click', event => {
   if (event.target.className === 'isHere') {
-    axios.put(`/api/users/${event.target.dataset.id}`, { isHere: true })
+    axios.put(`/api/burgers/${event.target.dataset.id}`, { isHere: true })
     .then(() => location.reload())
     .catch(err => console.error(err))
   } else if (event.target.className === 'delete') {
-    axios.delete(`/api/users/${event.target.dataset.id}`)
+    axios.delete(`/api/burgers/${event.target.dataset.id}`)
     .then(() => location.reload())
     .catch(err => console.error(err))
   }
