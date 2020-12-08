@@ -1,10 +1,10 @@
-DROP DATABASE IF EXISTS users_db;
+DROP DATABASE IF EXISTS burgers_db;
 
-CREATE DATABASE users_db;
+CREATE DATABASE burgers_db;
 
-USE users_db;
+USE burgers_db;
 
-CREATE TABLE users (
+CREATE TABLE burgers (
 	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     name VARCHAR(50) NOT NULL,
     isHere BOOL NOT NULL

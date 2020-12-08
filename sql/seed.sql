@@ -1,8 +1,8 @@
-USE users_db;
+USE burgers_db;
 
-INSERT INTO users (name, isHere)
-VALUES ('John Doe', true), 
-('Jane Doe', false), 
-('Jack Doe', true), 
-('James Doe', false), 
-('Jenny Doe', false);
+INSERT INTO burgers (name, isHere)
+VALUES ('Homemade Veggie Burger', true), 
+('Chicken Burger', false), 
+('Veggie Animal Style', true), 
+('BLT Burger', false), 
+('Cheese Burger', false);
