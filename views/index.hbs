@@ -1,29 +1,29 @@
-<h1>Attendance Portal</h1>
+<h1>Eat-Da-Burger</h1>
 
 <div class="container">
   <div class="row">
     <form>
       <p>
-        <label for="name">name</label>
+        <label for="name">Burger Name</label>
         <input type="text" name="name" id="name">
       </p>
       <p>
-        <button id="addUser">Add User</button>
+        <button id="addUser">Add Burger</button>
       </p>
     </form>
   </div>
   <div class="row">
     <div class="col-md-6">
-      <h4>Not Present</h4>
-      {{#each users}}
+      <h4>Ready to Devoured</h4>
+      {{#each burgers}}
       {{#unless this.isHere}}
       <p class="isHere" data-id="{{this.id}}">{{ this.name }}</p>
       {{/unless}}
       {{/each}}
     </div>
     <div class="col-md-6">
-      <h4>Present</h4>
-      {{#each users}}
+      <h4>Devoured</h4>
+      {{#each burgers}}
       {{#if this.isHere}}
       <p class="delete" data-id="{{this.id}}">{{ this.name }}</p>
       {{/if}}
