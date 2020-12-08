@@ -1,4 +1,4 @@
-const burger = require("../../models/burger")
+const burger = require("../../models/burger.js")
 
 document.getElementById('addBurger').addEventListener('click', event => {
   event.preventDefault()
