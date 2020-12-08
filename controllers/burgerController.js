@@ -1,10 +1,10 @@
 const router = require('express').Router()
-const burger = require('../models/burger.js')
+const burger = require('../models/burger')
 
 
 router.get('/burgers', (req, res) => 
-  burger.getAll(burger => 
-    res.render('index', { burger })))
+  burger.getAll(burgers => 
+    res.render('index', { burgers })))
 
 router.post('/burgers', (req, res) => 
   burger.create(req.body, () => 
