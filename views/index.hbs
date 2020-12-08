@@ -19,7 +19,7 @@
       <h4>Ready to Devoured</h4>
       {{#each burgers}}
       {{#unless this.devoured}}
-      <p class="isHere" data-id="{{this.id}}">{{ this.name }}</p>
+      <p class="devoured" data-id="{{this.id}}">{{ this.name }}</p>
       {{/unless}}
       {{/each}}
     </div>
