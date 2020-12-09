@@ -18,6 +18,10 @@ body {
 }
 
 p {
-  align-items: center;
-  align-self: center;
+
+  justify-content: center;
+}
+#form {
+  margin-top: 50px;
+  justify-content: center;
 }
