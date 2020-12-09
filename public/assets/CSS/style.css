@@ -1,7 +1,18 @@
-body{
+body {
   background-color: yellow;
   align-items: center;
+  height: 100%;
+  margin: 0;
 }
-.h1{
-  align-content: center;
+
+.h1 {
+  text-align: center;
+}
+
+
+
+.container {
+  display: ruby-base-container;
+  justify-content: center;
+  text-align: center;
 }
